@@ -1,36 +1,138 @@
-<p>&nbsp;</p>
-<header>
-<div class="container">
-<h1 style="margin: 0px;"><span style="color: #000000;">My Business</span></h1>
-<nav>
-<ul>
-<li><a href="#"><span style="color: #000000;">Home</span></a></li>
-<li><span style="color: #000000;"><a style="color: #000000;" href="#">Products</a></span></li>
-<li><span style="color: #000000;"><a style="color: #000000;" href="#">About</a></span></li>
-<li><span style="color: #000000;"><a style="color: #000000;" href="#">Contact</a></span></li>
-</ul>
-</nav></div>
-</header>
-<section class="showcase">
-<div class="container">
-<h1><span style="color: #000000;">Welcome to Our Store</span></h1>
-<p><span style="color: #000000;">Providing quality products at the best prices</span></p>
-</div>
-</section>
-<section class="products">
-<div class="product"><img src="https://example.com/product1.jpg" alt="Product 1" />
-<h3>Product 1</h3>
-<p>Description of Product 1</p>
-<button>Buy Now</button></div>
-<div class="product"><img src="https://example.com/product2.jpg" alt="Product 2" />
-<h3>Product 2</h3>
-<p>Description of Product 2</p>
-<button>Buy Now</button></div>
-<div class="product"><img src="https://example.com/product3.jpg" alt="Product 3" />
-<h3>Product 3</h3>
-<p>Description of Product 3</p>
-<button>Buy Now</button></div>
-</section>
-<footer>
-<p>My Business &copy; 2024</p>
-</footer>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Llantas y Taller Automotriz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        .section {
+            background: white;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .product {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .product img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form label {
+            margin-bottom: 5px;
+        }
+        form input, form select, form textarea, form button {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://logodownload.org/wp-content/uploads/2017/08/bridgestone-logo.png" alt="Logo Bridgestone">
+    </header>
+    <nav>
+        <a href="#llantas">Llantas</a>
+        <a href="#cita">Agendar Cita</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <main>
+        <section id="llantas" class="section">
+            <h2>Nuestra Selección de Llantas</h2>
+            <p>Encuentra llantas para cualquier vehículo al mejor precio. Aquí tienes algunos de nuestros modelos más populares:</p>
+            <div class="product">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_834932-MLU74899114472_032024-O.webp" alt="Llanta Todo Terreno Bridgestone">
+                <p>Llanta Todo Terreno 4x4 - Precio: $1,200 MXN</p>
+            </div>
+            <div class="product">
+                <img src="https://www.imotoaccesorios.com.mx/cdn/shop/products/3_d6603db8-7747-4f82-b9a5-fec161af43a9_600x.png?v=1678312552" alt="Llanta Deportiva Bridgestone">
+                <p>Llanta Deportiva R15 - Precio: $1,000 MXN</p>
+            </div>
+            <div class="product">
+                <img src="https://assets.bridgestonetire.com/content/dam/consumer/bst/shared/tires/alenza-001/tilted-cl.jpg" alt="Llanta SUV Bridgestone">
+                <p>Llanta para SUV R18 - Precio: $1,500 MXN</p>
+            </div>
+        </section>
+        <section id="cita" class="section">
+            <h2>Agenda una Cita</h2>
+            <p>Llena el siguiente formulario para agendar tu cita en nuestro taller automotriz:</p>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+                
+                <label for="fecha">Fecha de la cita:</label>
+                <input type="date" id="fecha" name="fecha" required>
+                
+                <label for="servicio">Servicio requerido:</label>
+                <select id="servicio" name="servicio" required>
+                    <option value="cambio_llantas">Cambio de llantas</option>
+                    <option value="balanceo">Balanceo</option>
+                    <option value="alineacion">Alineación</option>
+                    <option value="revision">Revisión general</option>
+                </select>
+                
+                <label for="mensaje">Comentarios:</label>
+                <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section id="contacto" class="section">
+            <h2>Contacto</h2>
+            <p>Para más información, puedes llamarnos al <strong>+52 123 456 7890</strong> o visitarnos en nuestra sucursal, Bridgestone Elohim.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Venta de Llantas y Taller Automotriz. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
