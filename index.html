@@ -1,155 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carpintería Félix</title>
+    <title>Venta de Llantas y Taller Automotriz</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            color: #000000;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
+            background-color: #f4f4f4;
         }
         header {
-            background: #d3ad82;
-            color: #000000;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #a68258 3px solid;
-        }
-        header a {
-            color: #000000;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header li {
-            float: left;
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        header #branding {
-            float: left;
-        }
-        header #branding h1 {
-            margin: 0;
-        }
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
-        .showcase {
-            background: url('https://example.com/woodwork-background.jpg') no-repeat center center/cover;
-            color: #000000;
-            height: 400px;
-            text-align: center;
-            padding-top: 100px;
-        }
-        .showcase h1 {
-            font-size: 55px;
-            margin-top: 0;
-        }
-        .showcase p {
-            font-size: 20px;
-        }
-        .products {
-            display: flex;
-            justify-content: space-around;
-            margin: 20px 0;
-        }
-        .product {
             background: #ffffff;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
             text-align: center;
+        }
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        .section {
+            background: white;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .product {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
         }
         .product img {
-            max-width: 100%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border-radius: 5px;
         }
-        .product h3 {
-            margin: 10px 0;
+        form {
+            display: flex;
+            flex-direction: column;
         }
-        .product p {
-            color: #000000;
+        form label {
+            margin-bottom: 5px;
         }
-        .product button {
-            background: #a68258;
-            color: #000000;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-        }
-        .product button:hover {
-            background: #8e7043;
+        form input, form select, form textarea, form button {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
         }
         footer {
-            background: #333333;
-            color: #ffffff;
             text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
+            padding: 20px;
+            background-color: #333;
+            color: white;
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <div id="branding">
-                <h1>Carpintería Félix</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Sobre Nosotros</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+        <img src="https://logodownload.org/wp-content/uploads/2017/08/bridgestone-logo.png" alt="Logo Bridgestone">
     </header>
-
-    <section class="showcase">
-        <div class="container">
-            <h1>Bienvenido a Carpintería Félix</h1>
-            <p>Ofreciendo productos de madera de la más alta calidad</p>
-        </div>
-    </section>
-
-    <section class="products">
-        <div class="product">
-            <img src="https://example.com/wood-product1.jpg" alt="Producto de Madera 1">
-            <h3>Producto de Madera 1</h3>
-            <p>Descripción del Producto de Madera 1</p>
-            <button>Comprar Ahora</button>
-        </div>
-        <div class="product">
-            <img src="https://example.com/wood-product2.jpg" alt="Producto de Madera 2">
-            <h3>Producto de Madera 2</h3>
-            <p>Descripción del Producto de Madera 2</p>
-            <button>Comprar Ahora</button>
-        </div>
-        <div class="product">
-            <img src="https://example.com/wood-product3.jpg" alt="Producto de Madera 3">
-            <h3>Producto de Madera 3</h3>
-            <p>Descripción del Producto de Madera 3</p>
-            <button>Comprar Ahora</button>
-        </div>
-    </section>
-
+    <nav>
+        <a href="#llantas">Llantas</a>
+        <a href="#cita">Agendar Cita</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <main>
+        <section id="llantas" class="section">
+            <h2>Nuestra Selección de Llantas</h2>
+            <p>Encuentra llantas para cualquier vehículo al mejor precio. Aquí tienes algunos de nuestros modelos más populares:</p>
+            <div class="product">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_834932-MLU74899114472_032024-O.webp" alt="Llanta Todo Terreno Bridgestone">
+                <p>Llanta Todo Terreno 4x4 - Precio: $1,200 MXN</p>
+            </div>
+            <div class="product">
+                <img src="https://www.imotoaccesorios.com.mx/cdn/shop/products/3_d6603db8-7747-4f82-b9a5-fec161af43a9_600x.png?v=1678312552" alt="Llanta Deportiva Bridgestone">
+                <p>Llanta Deportiva R15 - Precio: $1,000 MXN</p>
+            </div>
+            <div class="product">
+                <img src="https://assets.bridgestonetire.com/content/dam/consumer/bst/shared/tires/alenza-001/tilted-cl.jpg" alt="Llanta SUV Bridgestone">
+                <p>Llanta para SUV R18 - Precio: $1,500 MXN</p>
+            </div>
+        </section>
+        <section id="cita" class="section">
+            <h2>Agenda una Cita</h2>
+            <p>Llena el siguiente formulario para agendar tu cita en nuestro taller automotriz:</p>
+            <form action="https://formspree.io/f/mdkoyngy" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+                
+                <label for="fecha">Fecha de la cita:</label>
+                <input type="date" id="fecha" name="fecha" required>
+                
+                <label for="servicio">Servicio requerido:</label>
+                <select id="servicio" name="servicio" required>
+                    <option value="cambio_llantas">Cambio de llantas</option>
+                    <option value="balanceo">Balanceo</option>
+                    <option value="alineacion">Alineación</option>
+                    <option value="revision">Revisión general</option>
+                </select>
+                
+                <label for="mensaje">Comentarios:</label>
+                <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section id="contacto" class="section">
+            <h2>Contacto</h2>
+            <p>Para más información, puedes llamarnos al <strong>+52 123 456 7890</strong> o visitarnos en nuestra sucursal.</p>
+        </section>
+    </main>
     <footer>
-        <p>Carpintería Félix &copy; 2024</p>
+        <p>&copy; 2024 Venta de Llantas y Taller Automotriz. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
-
